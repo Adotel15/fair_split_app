@@ -5,6 +5,7 @@ body {
   padding: 0;
   height: 100vh;
   box-sizing: border-box;
+  background-color: rgb(10, 10, 10, 0.1);
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

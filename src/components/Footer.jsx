@@ -3,14 +3,10 @@ import styled from "styled-components"
 
 const FooterWrapper = styled.footer`
 
-    grid-column: 1 / 6;
-    grid-row: 20;
-
     margin: 0;
     padding: 0;
     padding: 0 10px;
-
-    background-color: #F4FBFF;
+    height: 40px;
 
     display: flex;
     justify-content: space-between;

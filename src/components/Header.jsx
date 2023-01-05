@@ -4,20 +4,19 @@ import { basicColors } from "../theme"
 
 const HeaderWrapper = styled.header`
 
-    grid-column: 1 / 6;
-    grid-row: 1;
-
     box-sizing: border-box;
 
+    height: 90px;
     padding: 0 40px;
     z-index: 0;
 
     box-shadow: 0px 10px 10px 0px rgba(156,156,156,0.61);
 
     display: flex;
+    align-items: center;
     justify-content: flex-start;
 
-    background-color: ${basicColors.principalColor};
+    background: rgb(33, 150, 243, 0.5);
     color: ${basicColors.white};
     
 `

@@ -16,7 +16,6 @@ function App() {
 
           <Routes>
             <Route path = "/" element = {<PrincipalDashboard />}/>
-            <Route path = "/budget" element = {<div>Budget</div>} />
             <Route path = "/history" element = {<div>Historial</div>} />
             <Route path = "/quotation" element = {<div>Cotizacion</div>} />
           </Routes>

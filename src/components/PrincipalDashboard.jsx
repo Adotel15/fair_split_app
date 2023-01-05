@@ -1,41 +1,108 @@
 
 import styled from "styled-components"
-import Options from "./Options"
 
 const PrincipalDashboardWrapper = styled.main`
 
-    grid-column: 1 / 6;
-    grid-row: 2 / 20;
-
-    background-color: #F4FBFF;
-
-    height: 100%;
+    height: calc(100% - 130px);
     width: 100%;
 
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    .container {
+      height: 80%;
+      width: 600px;
+      
+      background-color: white;
+      border-radius: 20px;
 
-    .title {
-        grid-column: 2 / 5;
-        grid-row: 2;
+      box-shadow: 1px 1px 10px 10px #d6d6d6;
 
-        display: flex;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
+    .form  {
+
+      height: 60%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .submit {
+        border: none;
+        background-color: transparent;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+
+        input {
+          border: none;
+          height: 40px;
+        }
+      }
+      
+      
+    }
+
+    .added {
+    }
 `
 
 const PrincipalDashboard = () => {
+
   return (
     <PrincipalDashboardWrapper>
-        <div className = "title">
-            <h1>Bienvenidos a FairSplit!</h1>
-        </div>
 
-        <Options />
+      <div className = "container">
+         <form className = "form">
+
+            <div> 
+              <label htmlFor = "name" >Nombre: </label>
+              <input
+                type = "text" 
+                name = "name" 
+                id = "name"
+                placeholder = "Introduce el nombre"
+              />
+            </div>
+
+            <div>
+              <label htmlFor = "price">Cantidad:</label>
+              <input 
+                type = "text" 
+                name = "price" 
+                id = "price" 
+                placeholder = "Introduce la cantidad aportada"
+              />
+            </div>
+
+            <div>
+              <label htmlFor = "description">Descripción:</label>
+              <input 
+                type = "text" 
+                name = "description" 
+                id = "description" 
+                placeholder = "Introduce una descripción (Opcional)"
+              />
+            </div>
+
+            <input type = "submit" value = "Añadir" className = "submit"/>
+         </form>
+      </div>
+
+      <div className = "container added">
+        Añadidos
+      </div>
 
     </PrincipalDashboardWrapper>
   )
