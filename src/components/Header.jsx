@@ -16,7 +16,7 @@ const HeaderWrapper = styled.header`
     align-items: center;
     justify-content: flex-start;
 
-    background: rgb(33, 150, 243, 0.5);
+    background: #2196F3;
     color: ${basicColors.white};
     
 `
